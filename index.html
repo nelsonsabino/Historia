@@ -40,9 +40,25 @@
     function toggleAccordion(event) {
         event.target.nextElementSibling.style.display = event.target.nextElementSibling.style.display === 'block' ? 'none' : 'block';
     }
+
+    function openTab(tabName) {
+        let tabs = document.getElementsByClassName("tab");
+        for (let tab of tabs) {
+            tab.classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+    }
 </script>
 </head>
 <body>
+
+<div>
+    <button onclick="openTab('dia1')">Dia 1 (Sexta-feira 27/09)</button>
+    <button onclick="openTab('dia2')">Dia 2 (Sábado 28/09)</button>
+    <button onclick="openTab('dia3')">Dia 3 (Domingo 29/09)</button>
+    <button onclick="openTab('dia4')">Dia 4 (Segunda 30/09)</button>
+    <button onclick="openTab('dia5')">Dia 5 (Terça 01/10)</button>
+</div>
 
 <div class="tab-content">
     <div id="dia1" class="tab active">
@@ -106,16 +122,6 @@
         <!-- Conteúdo para o Dia 5 -->
     </div>
 </div>
-
-<script>
-    function openTab(tabName) {
-        let tabs = document.getElementsByClassName("tab");
-        for (let tab of tabs) {
-            tab.classList.remove("active");
-        }
-        document.getElementById(tabName).classList.add("active");
-    }
-</script>
 
 </body>
 </html>
