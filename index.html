@@ -27,13 +27,40 @@
     
     .accordion-header {
         background-color: #f1f1f1;
-        padding: 10px;
+        padding: 15px;
         cursor: pointer;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s;
+        width: 100%;
+        text-align: left;
+    }
+    
+    .accordion-header:hover {
+        background-color: #ddd;
     }
     
     .accordion-content {
         padding: 10px;
         display: none;
+    }
+    
+    .tab-buttons {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    .tab-button {
+        padding: 15px;
+        background-color: #f1f1f1;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .tab-button.active {
+        background-color: #ddd;
     }
 </style>
 <script>
@@ -47,17 +74,23 @@
             tab.classList.remove("active");
         }
         document.getElementById(tabName).classList.add("active");
+
+        let buttons = document.getElementsByClassName("tab-button");
+        for (let button of buttons) {
+            button.classList.remove("active");
+        }
+        document.getElementById(tabName.replace("dia", "button")).classList.add("active");
     }
 </script>
 </head>
 <body>
 
-<div>
-    <button onclick="openTab('dia1')">Dia 1 (Sexta-feira 27/09)</button>
-    <button onclick="openTab('dia2')">Dia 2 (Sábado 28/09)</button>
-    <button onclick="openTab('dia3')">Dia 3 (Domingo 29/09)</button>
-    <button onclick="openTab('dia4')">Dia 4 (Segunda 30/09)</button>
-    <button onclick="openTab('dia5')">Dia 5 (Terça 01/10)</button>
+<div class="tab-buttons">
+    <button class="tab-button active" onclick="openTab('dia1')" id="button1">Dia 1 (Sexta-feira 27/09)</button>
+    <button class="tab-button" onclick="openTab('dia2')" id="button2">Dia 2 (Sábado 28/09)</button>
+    <button class="tab-button" onclick="openTab('dia3')" id="button3">Dia 3 (Domingo 29/09)</button>
+    <button class="tab-button" onclick="openTab('dia4')" id="button4">Dia 4 (Segunda 30/09)</button>
+    <button class="tab-button" onclick="openTab('dia5')" id="button5">Dia 5 (Terça 01/10)</button>
 </div>
 
 <div class="tab-content">
