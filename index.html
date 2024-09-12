@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Itinerário do Dia 1</title>
+<title>Itinerário da Viagem</title>
 <style>
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+    }
+    
+    .tab {
+        display: none;
+    }
+    
+    .tab.active {
+        display: block;
     }
     
     .accordion {
@@ -36,75 +44,78 @@
 </head>
 <body>
 
-<div id="dia1" class="tab-content">
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">ALENQUER - TERMINAL 2</div>
-        <div class="accordion-content">
-            <p>7:10 - Saída de casa</p>
-            <p>8:00 - Chegada ao aeroporto</p>
-            <p>9:35 - ❗❗ Fecho da porta de embarque T2</p>
-            <p>10:05 - Descolagem</p>
-            <p>14:10 - Chegada ao aeroporto de Roma T1</p>
+<div class="tab-content">
+    <div id="dia1" class="tab active">
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(event)">ALENQUER - TERMINAL 2</div>
+            <div class="accordion-content">
+                <p>7:10 - Saída de casa</p>
+                <p>8:00 - Chegada ao aeroporto</p>
+                <p>9:35 - ❗❗ Fecho da porta de embarque T2</p>
+                <p>10:05 - Descolagem</p>
+                <p>14:10 - Chegada ao aeroporto de Roma T1</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(event)">AEROPORTO - ROMA</div>
+            <div class="accordion-content">
+                <p>Comida rápida</p>
+                <p>Casas de banho</p>
+                <p>15:05 - BUS Terravision no Terminal 3 (14:25 ou 15:05)</p>
+                <p>15:50 - Chegada a Roma termini</p>
+                <p>Bilhetes de metro passe semanal</p>
+            </div>
         </div>
     </div>
 
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">AEROPORTO - ROMA</div>
-        <div class="accordion-content">
-            <p>Comida rápida</p>
-            <p>Casas de banho</p>
-            <p>15:05 - BUS Terravision no Terminal 3 (14:25 ou 15:05)</p>
-            <p>15:50 - Chegada a Roma termini</p>
-            <p>Bilhetes de metro passe semanal</p>
+    <div id="dia2" class="tab">
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(event)">CASA - BILHETEIRAS COLISEU</div>
+            <div class="accordion-content">
+                <p>7:39 - Saída de casa</p>
+                <p>7:44 - Numidio Quadrato   M  A Battistini</p>
+                <p>7:57 - Termini   M</p>
+                <p>8:02 - Termini   M  B1 Laurentina</p>
+                <p>8:04 - Colosseo   M</p>
+                <p>8:11 - Biglietteria Foro Romano</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header" onclick="toggleAccordion(event)">COLISEU - FORUM</div>
+            <div class="accordion-content">
+                <p>8:11 - Biglietteria Foro Romano</p>
+                <p>8:30 ❗  - Basílica de São Pedro in Vincoli (-18:50)</p>
+                <p>9:30 ❗🎫 - Entrada no Coliseu (9:30h ±15min.)</p>
+                <p>10:30 ❗🎫 - Entrada no Palatino e Fórum Romano</p>
+                <p>12:45 - Saída do Fórum (Via Sacra)</p>
+            </div>
         </div>
     </div>
 
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">METRO TERMINI - CASA</div>
-        <div class="accordion-content">
-            <p>16:05 - Metro Roma Termini</p>
-            <p>16:07 - Termini M A Anagnina</p>
-            <p>16:21 - Numidio Quadrato M</p>
-            <p>16:25 - Casa</p>
-        </div>
+    <div id="dia3" class="tab">
+        <!-- Conteúdo para o Dia 3 -->
     </div>
 
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">CASA - METRO BARBERINI</div>
-        <div class="accordion-content">
-            <p>18:00 - Saída de casa</p>
-            <p>18:05 - Numidio Quadrato M A Battistini</p>
-            <p>18:20 - Barberini M</p>
-        </div>
+    <div id="dia4" class="tab">
+        <!-- Conteúdo para o Dia 4 -->
     </div>
 
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">BARBERINI - COLISEU</div>
-        <div class="accordion-content">
-            <p>18:20 - Barberini M</p>
-            <p>18:30 - Fontana di Trevi</p>
-            <p>18:45 ❗ - Galleria Sciarra (-20:00)</p>
-            <p>19:00 - Templo de Adriano</p>
-            <p>19:15 ❗ - Igreja de Santo Inácio de Loyola (-23:30)</p>
-            <p>19:30 ❗ - Igreja de São Marcelo no Corso (-20:00)</p>
-            <p>20:00 - Via do Fórum Imperial</p>
-            <p>20:15 - Arco de Constantino</p>
-            <p>20:30 - 🍕Pizzería di Sforza Piero</p>
-            <p>21:02 - Colosseo M B1 Jonio</p>
-        </div>
-    </div>
-
-    <div class="accordion">
-        <div class="accordion-header" onclick="toggleAccordion(event)">COLISEU - CASA</div>
-        <div class="accordion-content">
-            <p>21:02 - Colosseo M B1 Jonio</p>
-            <p>21:04 - Termini M</p>
-            <p>21:10 - Termini M A Anagnina</p>
-            <p>21:24 - Numidio Quadrato M</p>
-            <p>21:28 - Casa</p>
-        </div>
+    <div id="dia5" class="tab">
+        <!-- Conteúdo para o Dia 5 -->
     </div>
 </div>
+
+<script>
+    function openTab(tabName) {
+        let tabs = document.getElementsByClassName("tab");
+        for (let tab of tabs) {
+            tab.classList.remove("active");
+        }
+        document.getElementById(tabName).classList.add("active");
+    }
+</script>
 
 </body>
 </html>
