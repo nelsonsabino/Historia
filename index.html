@@ -1,114 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roteiro de Roma</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-
-        .accordion {
-            background-color: #f1f1f1;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-            transition: 0.4s;
-        }
-
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: white;
-            overflow: hidden;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Itinerário do Dia 1</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .accordion {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .accordion-header {
+        background-color: #f1f1f1;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    .accordion-content {
+        padding: 10px;
+        display: none;
+    }
+</style>
+<script>
+    function toggleAccordion(event) {
+        event.target.nextElementSibling.style.display = event.target.nextElementSibling.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
 </head>
 <body>
 
-<h1>Roteiro de Roma</h1>
+<div id="dia1" class="tab-content">
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">ALENQUER - TERMINAL 2</div>
+        <div class="accordion-content">
+            <p>7:10 - Saída de casa</p>
+            <p>8:00 - Chegada ao aeroporto</p>
+            <p>9:35 - ❗❗ Fecho da porta de embarque T2</p>
+            <p>10:05 - Descolagem</p>
+            <p>14:10 - Chegada ao aeroporto de Roma T1</p>
+        </div>
+    </div>
 
-<!-- Acordeão para o Dia 1 -->
-<button class="accordion">Dia 1 (Sexta-feira 27/09)</button>
-<div class="panel">
-  <h2>ALENQUER - TERMINAL 2</h2>
-  <p>7:10 - Saída de casa<br>
-  8:00 - Chegada ao aeroporto<br>
-  9:35 - Fecho da porta de embarque T2<br>
-  10:05 - Descolagem<br>
-  14:10 - Chegada ao aeroporto de Roma T1<br></p>
-  <h2>AEROPORTO - ROMA</h2>
-  <p>15:05 - BUS Terravision no Terminal 3<br>
-  15:50 - Chegada a Roma termini</p>
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">AEROPORTO - ROMA</div>
+        <div class="accordion-content">
+            <p>Comida rápida</p>
+            <p>Casas de banho</p>
+            <p>15:05 - BUS Terravision no Terminal 3 (14:25 ou 15:05)</p>
+            <p>15:50 - Chegada a Roma termini</p>
+            <p>Bilhetes de metro passe semanal</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">METRO TERMINI - CASA</div>
+        <div class="accordion-content">
+            <p>16:05 - Metro Roma Termini</p>
+            <p>16:07 - Termini M A Anagnina</p>
+            <p>16:21 - Numidio Quadrato M</p>
+            <p>16:25 - Casa</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">CASA - METRO BARBERINI</div>
+        <div class="accordion-content">
+            <p>18:00 - Saída de casa</p>
+            <p>18:05 - Numidio Quadrato M A Battistini</p>
+            <p>18:20 - Barberini M</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">BARBERINI - COLISEU</div>
+        <div class="accordion-content">
+            <p>18:20 - Barberini M</p>
+            <p>18:30 - Fontana di Trevi</p>
+            <p>18:45 ❗ - Galleria Sciarra (-20:00)</p>
+            <p>19:00 - Templo de Adriano</p>
+            <p>19:15 ❗ - Igreja de Santo Inácio de Loyola (-23:30)</p>
+            <p>19:30 ❗ - Igreja de São Marcelo no Corso (-20:00)</p>
+            <p>20:00 - Via do Fórum Imperial</p>
+            <p>20:15 - Arco de Constantino</p>
+            <p>20:30 - 🍕Pizzería di Sforza Piero</p>
+            <p>21:02 - Colosseo M B1 Jonio</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(event)">COLISEU - CASA</div>
+        <div class="accordion-content">
+            <p>21:02 - Colosseo M B1 Jonio</p>
+            <p>21:04 - Termini M</p>
+            <p>21:10 - Termini M A Anagnina</p>
+            <p>21:24 - Numidio Quadrato M</p>
+            <p>21:28 - Casa</p>
+        </div>
+    </div>
 </div>
-
-<!-- Acordeão para o Dia 2 -->
-<button class="accordion">Dia 2 (Sábado 28/09)</button>
-<div class="panel">
-  <h2>CASA - BILHETEIRAS COLISEU</h2>
-  <p>7:39 - Saída de casa<br>
-  8:04 - Colosseo   M <br>
-  8:11 - Biglietteria Foro Romano</p>
-  <h2>COLISEU - FORUM</h2>
-  <p>9:30 - Entrada no Coliseu<br>
-  10:30 - Entrada no Palatino e Fórum Romano</p>
-</div>
-
-<!-- Acordeão para o Dia 3 -->
-<button class="accordion">Dia 3 (Domingo 29/09)</button>
-<div class="panel">
-  <h2>CASA - BARBERINI</h2>
-  <p>7:56 - Saída de casa<br>
-  8:25 - Fontana di Trevi<br>
-  9:20 - Panteão</p>
-</div>
-
-<!-- Acordeão para o Dia 4 -->
-<button class="accordion">Dia 4 (Segunda-feira 30/09)</button>
-<div class="panel">
-  <h2>CASA - OTTAVIANO</h2>
-  <p>7:02 - Saída de casa<br>
-  7:37 - Museus do Vaticano</p>
-</div>
-
-<!-- Acordeão para o Dia 5 -->
-<button class="accordion">Dia 5 (Terça-feira 01/10)</button>
-<div class="panel">
-  <h2>CASA - FLAMINIO</h2>
-  <p>9:01 - Saída de casa<br>
-  9:50 - Escadarias da Praça da Espanha<br>
-  12:30 - Temple of Aesculapius</p>
-</div>
-
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        });
-    }
-</script>
 
 </body>
 </html>
