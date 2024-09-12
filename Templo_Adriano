@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria Sciarra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .image {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://pt.wikipedia.org/wiki/Templo_de_Adriano#/media/Ficheiro:Tempio_di_Adriano_-_esterno.jpg" alt="Tempio_di_Adriano">
+        </div>
+        
+        <div class="content">
+            <h1>Templo de Adriano</h1>
+            
+            <p>O Templo de Adriano, construído em 145 por Antonino Pio, é um templo romano dedicado ao imperador Adriano.</p>
+            
+            <h2>Características principais:</h2>
+            <ul>
+<li>Localizado no Campo de Marte, Roma</li>
+<li>Originalmente octóstilo com 30 colunas</li>
+<li>Fachada incorporada em um palácio papal do século XVII</li>
+<li>Restos da cela interna ainda visíveis</li>
+<li>Base das colunas com relevos de personificações de províncias do Império Romano</li>
+<li>Tinha uma grande arcada quadrada aberta para a Via del Corso</li>
+<li>Seu nome sobrevive na Via dell'Archetto</li>
+            </ul>
+            <p>O templo foi parcialmente incorporado em construções subsequentes, preservando apenas alguns elementos originais. Suas descobertas arqueológicas fornecem insights valiosos sobre a arte e a política imperial romanas.</p>
+        </div>
+    </div>
+</body>
+</html>
