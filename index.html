@@ -3,212 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papel dos Portugueses na Abertura Europeia ao Mundo</title>
+    <title>Roteiro de Roma</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
         }
-        .segment {
-            margin-bottom: 15px;
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
         }
-        .segment h2 {
+        .tab button {
+            background-color: inherit;
+            border: none;
+            outline: none;
             cursor: pointer;
-            color: #0056b3;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
         }
-        .content {
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        .tab button.active {
+            background-color: #ccc;
+        }
+        .tabcontent {
             display: none;
-            padding-left: 20px;
+            padding: 6px 12px;
+            border-top: none;
+        }
+        h1, h2 {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Conhecimento Europeu do Mundo</h2>
-        <div class="content">
-            <p>Limitado e centrado no Mediterrâneo</p>
-            <p>Baseado em mitos da Antiguidade Clássica</p>
-            <p>Conheciam vagamente Índia e China</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Domínio das Rotas Comerciais</h2>
-        <div class="content">
-            <p>Árabes dominavam rotas da Índia e China</p>
-            <p>Turcos controlavam produtos de luxo; italianos intermediavam</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Produtos do Oriente</h2>
-        <div class="content">
-            <p>Chegavam aos portos italianos e por via terrestre: especiarias, seda, tecidos de luxo, produtos exóticos</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Descobrimentos Portugueses</h2>
-        <div class="content">
-            <p>Motivados por fatores técnicos, econômicos, sociais, políticos e religiosos</p>
-            <p>Visavam descobrir novas terras</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Motivações para a Expansão Portuguesa</h2>
-        <div class="content">
-            <p><strong>Econômicos:</strong></p>
-            <ul>
-                <li>Falta de cereais, mão de obra e moeda</li>
-                <li>Busca por zonas de captura e compra de escravos</li>
-                <li>Acesso a ouro africano e novos mercados</li>
-            </ul>
-            <p><strong>Sociais:</strong></p>
-            <ul>
-                <li>Clero queria difundir o cristianismo</li>
-                <li>Nobreza buscava cargos e títulos</li>
-                <li>Burguesia procurava novas rotas e mercados</li>
-            </ul>
-            <p><strong>Políticos:</strong></p>
-            <ul>
-                <li>Iniciativa régia criando oportunidades para a nobreza</li>
-                <li>Mobilização dos nobres para conquistas</li>
-                <li>Aumento do prestígio da Coroa</li>
-            </ul>
-            <p><strong>Religiosos:</strong></p>
-            <ul>
-                <li>Difusão do cristianismo</li>
-                <li>Combate ao infiel no contexto de cruzadas no Norte de África</li>
-            </ul>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Etapas e Áreas da Expansão Portuguesa</h2>
-        <div class="content">
-            <p><strong>Norte de África (1415-1437):</strong></p>
-            <ul>
-                <li>Conquista de Ceuta (1415) por D. João I</li>
-                <li>Objetivos militares e econômicos: controle de pirataria, acesso a cereais e ouro</li>
-            </ul>
-            <p><strong>Arquipélagos Atlânticos (1418-1434):</strong></p>
-            <ul>
-                <li>Descoberta de Porto Santo (1418), Madeira (1419), Açores (1427)</li>
-                <li>Fundaram-se povoações e exploraram-se recursos naturais e agrícolas</li>
-            </ul>
-            <p><strong>Litoral Africano:</strong></p>
-            <ul>
-                <li>Reinado de D. Duarte (1433-1438): Gil Eanes passou o Cabo Bojador (1434)</li>
-                <li>Período henriquino (1443-1460): exclusividade do comércio a sul do Bojador</li>
-                <li>Reinado de D. Afonso V (1438-1481): conquistas em África e exploração do litoral</li>
-                <li>Reinado de João II (1481-1495): exploração do litoral africano e passagem do Cabo das Tormentas (1487-1488)</li>
-            </ul>
-            <p><strong>Reinado de D. Manuel I:</strong></p>
-            <ul>
-                <li>Viagem de Vasco da Gama à Índia (1497-1498)</li>
-                <li>Descoberta do Brasil por Pedro Álvares Cabral (1500)</li>
-            </ul>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Inovação Técnica dos Portugueses</h2>
-        <div class="content">
-            <p><strong>Instrumentos de Navegação:</strong></p>
-            <ul>
-                <li>Ampulheta, bússola, tábuas de declinação solar</li>
-                <li>Astrolábio, balestilha, quadrante</li>
-            </ul>
-            <p><strong>Desenvolvimento de embarcações:</strong></p>
-            <ul>
-                <li>Caravela: leme de cadaste, velas triangulares</li>
-            </ul>
-            <p><strong>Cartografia:</strong></p>
-            <ul>
-                <li>Cartas Náuticas: escala para determinar latitude, detalhes da costa e particularidades das terras descobertas</li>
-            </ul>
-            <p><strong>Observação e Descrição da Natureza:</strong></p>
-            <ul>
-                <li>Experiencialismo: guias náuticos, roteiros, diários de bordo, relatos de viagem</li>
-                <li>Figuras notáveis: Duarte Pacheco Pereira, D. João de Castro, Garcia de Orta, Pedro Nunes</li>
-            </ul>
-            <p><strong>Matematização do Real e Conceções Cosmológicas:</strong></p>
-            <ul>
-                <li>Adoção de algarismos indo-árabes</li>
-                <li>Questionamento do geocentrismo por Nicolau Copérnico</li>
-            </ul>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Império Português: Primeiro Poder Global Naval</h2>
-        <div class="content">
-            <p>Lisboa tornou-se metrópole do comércio ultramarino</p>
-            <p>Carreira da Índia trouxe produtos orientais: especiarias, seda, porcelanas</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Contributo para a Primeira Globalização</h2>
-        <div class="content">
-            <p>Viagens de descoberta interligaram Europa e diferentes continentes</p>
-            <p>Comércio global, trocas culturais e de consumo: animais, plantas, hábitos culturais</p>
-        </div>
-    </div>
-    <div class="segment">
-        <h2 onclick="toggleContent(this)">Produção Cultural Renascentista</h2>
-        <div class="content">
-            <p><strong>Distinção Social e Mecenato:</strong></p>
-            <ul>
-                <li>Renascimento na Itália: renovação cultural inspirada na Antiguidade Clássica</li>
-                <li>Mecenas apoiavam artistas e intelectuais</li>
-            </ul>
-            <p><strong>Cortes Renascentistas:</strong></p>
-            <ul>
-                <li>Centros de produção e inovação cultural</li>
-                <li>Valorização do conforto, antiguidades como símbolos de distinção</li>
-            </ul>
-            <p><strong>Atributos do Cortesão:</strong></p>
-            <ul>
-                <li>Educação ampla, conhecimento de normas de conduta e etiqueta</li>
-            </ul>
-            <p><strong>Apoio Real e Acadêmico:</strong></p>
-            <ul>
-                <li>Criação de colégios e academias</li>
-                <li>Desenvolvimento de humanidades, línguas antigas, geografia, medicina</li>
-            </ul>
-            <p><strong>Prestígio dos Intelectuais e Artistas:</strong></p>
-            <ul>
-                <li>Política de mecenato</li>
-                <li>Reconhecimento público, assinatura de obras</li>
-            </ul>
-            <p><strong>Ambiente Cultural na Corte Régia Portuguesa:</strong></p>
-            <ul>
-                <li>Desenvolvimento econômico e cultural</li>
-                <li>Apoio de reis e rainhas a diversas iniciativas culturais</li>
-                <li>Figuras notáveis: D. Duarte, D. Pedro, D. Henrique, D. Isabel, D. Afonso V</li>
-            </ul>
-            <p><strong>Reinados Destacados:</strong></p>
-            <ul>
-                <li>D. João II, D. Manuel I, D. João III</li>
-                <li>Apoio a humanistas e promoção do ensino humanista</li>
-            </ul>
-            <p><strong>Humanismo e Educação:</strong></p>
-            <ul>
-                <li>Valorização da Antiguidade Clássica, nova educação, capacidades individuais</li>
-                <li>Defendiam a reforma da prática cristã e da igreja</li>
-            </ul>
-            <p><strong>Individualismo, Espírito Crítico e Utopia:</strong></p>
-            <ul>
-                <li>Crença nas capacidades individuais e na razão</li>
-                <li>Conceberam sociedades ideais baseadas em princípios racionalistas</li>
-            </ul>
-        </div>
-    </div>
 
-    <script>
-        function toggleContent(element) {
-            var content = element.nextElementSibling;
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-    </script>
+<h1>Roteiro de Roma</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openDay(event, 'Dia1')">Dia 1 (27/09)</button>
+  <button class="tablinks" onclick="openDay(event, 'Dia2')">Dia 2 (28/09)</button>
+  <button class="tablinks" onclick="openDay(event, 'Dia3')">Dia 3 (29/09)</button>
+  <button class="tablinks" onclick="openDay(event, 'Dia4')">Dia 4 (30/09)</button>
+  <button class="tablinks" onclick="openDay(event, 'Dia5')">Dia 5 (01/10)</button>
+</div>
+
+<div id="Dia1" class="tabcontent">
+  <h2>Dia 1 (Sexta-feira 27/09)</h2>
+  <p>ALENQUER - TERMINAL 2</p>
+  <p>7:10 - Saída de casa<br>
+  8:00 - Chegada ao aeroporto<br>
+  9:35 - Fecho da porta de embarque T2<br>
+  10:05 - Descolagem<br>
+  14:10 - Chegada ao aeroporto de Roma T1<br></p>
+  <p>AEROPORTO - ROMA...</p>
+</div>
+
+<div id="Dia2" class="tabcontent">
+  <h2>Dia 2 (Sábado 28/09)</h2>
+  <p>CASA - BILHETEIRAS COLISEU...</p>
+</div>
+
+<div id="Dia3" class="tabcontent">
+  <h2>Dia 3 (Domingo 29/09)</h2>
+  <p>CASA - BARBERINI...</p>
+</div>
+
+<div id="Dia4" class="tabcontent">
+  <h2>Dia 4 (Segunda-feira 30/09)</h2>
+  <p>CASA - OTTAVIANO...</p>
+</div>
+
+<div id="Dia5" class="tabcontent">
+  <h2>Dia 5 (Terça-feira 01/10)</h2>
+  <p>CASA - FLAMINIO...</p>
+</div>
+
+<script>
+function openDay(evt, dayName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(dayName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Show the first tab by default
+document.getElementsByClassName("tablinks")[0].click();
+</script>
+
 </body>
 </html>
