@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roteiro: Monte Palatino e Fórum Romano</title>
+    <title>Guia: Monte Palatino e Fórum Romano</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color: #f4f4f4;
         }
-        h1, h2 {
-            text-align: center;
+        h1, h2, h3 {
             color: #333;
+        }
+        h1 {
+            text-align: center;
         }
         .section {
             margin-bottom: 40px;
@@ -21,162 +23,165 @@
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 10px auto; 
         }
         .description {
             margin: 15px 0;
             font-size: 1.1em;
         }
+        /* Layout em duas colunas para telas maiores */
+        @media (min-width: 768px) {
+            .section-container {
+                display: flex;
+                gap: 20px;
+            }
+            .section {
+                flex: 1;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>Roteiro: Monte Palatino e Fórum Romano</h1>
+    <h1>Guia: Monte Palatino e Fórum Romano</h1>
 
- <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Palatin-legende.jpg" alt="Monte Palatino">
-    
-    <h2>1. Entrada pelo Monte Palatino</h2>
-    <div class="section">
-        <p class="description">
-            Comece sua visita entrando pelo Monte Palatino, uma das colinas mais antigas de Roma e o local onde, segundo a lenda, Rómulo fundou a cidade.
-        </p>
-    </div>
+    <section class="section-container">
+        <section class="section">
+            <h2>Monte Palatino</h2>
+            <ol>
+                <li>
+                    <h3>Entrada pelo Monte Palatino</h3>
+                    <p class="description">
+                        Comece sua visita entrando pelo Monte Palatino, uma das colinas mais antigas de Roma e o local onde, segundo a lenda, Rómulo fundou a cidade.
+                    </p>
+                </li>
+                <li>
+                    <h3>Aqueduto de Nero</h3>
+                    <img src="https://pt.m.wikipedia.org/wiki/%C3%81gua_Cl%C3%A1udia#/media/Ficheiro%3A%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D0%B8%D0%BD.%D0%90%D0%BA%D0%B2%D0%B5%D0%B4%D1%83%D0%BA_%D0%9A%D0%BB%D0%B0%D0%B2%D0%B4%D0%B8%D1%8F.jpg" alt="Aqueduto de Nero">
+                    <p class="description">
+                        O aqueduto construído pelo imperador Nero para abastecer a região. Embora restem apenas algumas partes, sua estrutura mostra o sistema avançado de fornecimento de água de Roma.
+                    </p>
+                </li>
+                <li>
+                    <h3>Septizódio</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Septizodium_plan_de_rome_de_Paul_Bigot%2C_MRSH%2C_universit%C3%A9_de_Caen.JPG" alt="Reconstrução do Septizódio">
+                    <p class="description">
+                        Uma fachada monumental erguida por Septímio Severo. Hoje restam poucos vestígios, mas era um edifício grandioso que simbolizava o poder imperial.
+                    </p>
+                </li>
+                <li>
+                    <h3>Arcos Severianos no Palatino</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Arches_Severiane.jpg" alt="Arcos Severianos na atualidade">
+                    <p class="description">
+                        Esta série de arcos foi parte do complexo de palácios de Septímio Severo. Eles suportavam áreas residenciais e administrativas do palácio imperial.
+                    </p>
+                </li>
+                <li>
+                    <h3>Estádio Palatino</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Stadio_Palatino.jpg" alt="Estádio Palatino">
+                    <p class="description">
+                        Um estádio privado usado para jogos e eventos dos imperadores. Apesar de sua função exata ainda ser discutida, sua forma lembra uma pequena arena.
+                    </p>
+                </li>
+                <li>
+                    <h3>Domus Augustana</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Domus_Augustana_-_Palatine_Hill.jpg" alt="Ruínas da Domus Augustana">
+                    <p class="description">
+                        A residência privada dos imperadores, com vistas espetaculares e rica em arquitetura luxuosa. Sua estrutura refletia o poder da elite romana.
+                    </p>
+                </li>
+                <li>
+                    <h3>Domus Flávia</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Domus_Flavia_Roma.jpg" alt="Domus Flávia na época romana">
+                    <p class="description">
+                        Parte pública do palácio imperial, a Domus Flávia era usada para recepções e cerimónias. As salas grandiosas refletiam o poder e a riqueza do império.
+                    </p>
+                </li>
+                <li>
+                    <h3>Casa de Augusto</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Casa_di_Augusto.jpg" alt="Casa de Augusto">
+                    <p class="description">
+                        A residência do primeiro imperador de Roma, Augusto, preserva ainda alguns frescos coloridos, dando uma visão mais íntima de sua vida.
+                    </p>
+                </li>
+                <li>
+                    <h3>Palácio Tiberiano</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Palatino-080415-18.jpg" alt="Ruínas do Palácio Tiberiano">
+                    <p class="description">
+                        Construído por Tibério, o palácio era uma das residências imperiais. Hoje, restam poucas ruínas, mas elas indicam a magnitude do complexo original.
+                    </p>
+                </li>
+                <li>
+                    <h3>Terraço Belvedere do Palatino</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Belvedere_del_Palatino.jpg" alt="Vista do Terraço Belvedere">
+                    <p class="description">
+                        Um ponto de observação incrível com vistas panorâmicas do Fórum Romano e da cidade moderna de Roma. Um ótimo local para fotos e uma pausa.
+                    </p>
+                </li>
+            </ol>
+        </section>
 
-    <h2>2. Aqueduto de Nero</h2>
-    <div class="section">
-        <p class="description">
-            O aqueduto construído pelo imperador Nero para abastecer a região. Embora restem apenas algumas partes, sua estrutura mostra o sistema avançado de fornecimento de água de Roma.
-        </p>
-        <img src="https://pt.m.wikipedia.org/wiki/%C3%81gua_Cl%C3%A1udia#/media/Ficheiro%3A%D0%9F%D0%B0%D0%BB%D0%B0%D1%82%D0%B8%D0%BD.%D0%90%D0%BA%D0%B2%D0%B5%D0%B4%D1%83%D0%BA_%D0%9A%D0%BB%D0%B0%D0%B2%D0%B4%D0%B8%D1%8F.jpg" alt="Aqueduto de Nero">
-    </div>
-
-    <h2>3. Septizódio</h2>
-    <div class="section">
-        <p class="description">
-            Uma fachada monumental erguida por Septímio Severo. Hoje restam poucos vestígios, mas era um edifício grandioso que simbolizava o poder imperial.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Septizodium_plan_de_rome_de_Paul_Bigot%2C_MRSH%2C_universit%C3%A9_de_Caen.JPG" alt="Reconstrução do Septizódio">
-    </div>
-
-    <h2>4. Arcos Severianos no Palatino</h2>
-    <div class="section">
-        <p class="description">
-            Esta série de arcos foi parte do complexo de palácios de Septímio Severo. Eles suportavam áreas residenciais e administrativas do palácio imperial.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Arches_Severiane.jpg" alt="Arcos Severianos na atualidade">
-    </div>
-
-    <h2>5. Estádio Palatino</h2>
-    <div class="section">
-        <p class="description">
-            Um estádio privado usado para jogos e eventos dos imperadores. Apesar de sua função exata ainda ser discutida, sua forma lembra uma pequena arena.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Stadio_Palatino.jpg" alt="Estádio Palatino">
-    </div>
-
-    <h2>6. Domus Augustana</h2>
-    <div class="section">
-        <p class="description">
-            A residência privada dos imperadores, com vistas espetaculares e rica em arquitetura luxuosa. Sua estrutura refletia o poder da elite romana.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Domus_Augustana_-_Palatine_Hill.jpg" alt="Ruínas da Domus Augustana">
-    </div>
-
-    <h2>7. Domus Flávia</h2>
-    <div class="section">
-        <p class="description">
-            Parte pública do palácio imperial, a Domus Flávia era usada para recepções e cerimónias. As salas grandiosas refletiam o poder e a riqueza do império.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Domus_Flavia_Roma.jpg" alt="Domus Flávia na época romana">
-    </div>
-
-    <h2>8. Casa de Augusto</h2>
-    <div class="section">
-        <p class="description">
-            A residência do primeiro imperador de Roma, Augusto, preserva ainda alguns frescos coloridos, dando uma visão mais íntima de sua vida.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Casa_di_Augusto.jpg" alt="Casa de Augusto">
-    </div>
-
-    <h2>9. Palácio Tiberiano</h2>
-    <div class="section">
-        <p class="description">
-            Construído por Tibério, o palácio era uma das residências imperiais. Hoje, restam poucas ruínas, mas elas indicam a magnitude do complexo original.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Palatino-080415-18.jpg" alt="Ruínas do Palácio Tiberiano">
-    </div>
-
-    <h2>10. Terraço Belvedere do Palatino</h2>
-    <div class="section">
-        <p class="description">
-            Um ponto de observação incrível com vistas panorâmicas do Fórum Romano e da cidade moderna de Roma. Um ótimo local para fotos e uma pausa.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Belvedere_del_Palatino.jpg" alt="Vista do Terraço Belvedere">
-    </div>
-
-    <h2>11. Basílica Júlia</h2>
-    <div class="section">
-        <p class="description">
-            Localizada no Fórum Romano, esta era uma grande basílica onde se realizavam julgamentos e audiências públicas. As ruínas ainda impressionam pela dimensão.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Basilica_Julia_-_Roman_Forum.jpg" alt="Basílica Júlia">
-    </div>
-
-    <h2>12. Coluna de Focas</h2>
-    <div class="section">
-        <p class="description">
-            A última adição ao Fórum Romano, esta coluna foi erguida em 608 d.C. em homenagem ao imperador bizantino Focas. Ela se destaca por sua solidão em meio às ruínas.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Columna_de_Focas.jpg" alt="Coluna de Focas">
-    </div>
-
-    <h2>13. Templo de Saturno</h2>
-    <div class="section">
-        <p class="description">
-            Um dos templos mais antigos de Roma, dedicado a Saturno, deus da agricultura. As colunas que permanecem de pé são um testemunho da sua grandiosidade.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Tempio_di_Saturno.JPG" alt="Templo de Saturno">
-    </div>
-
-    <h2>14. Tabulário</h2>
-    <div class="section">
-        <p class="description">
-            O Tabulário era o edifício onde os arquivos do Estado Romano eram guardados. Parte da estrutura está integrada ao Capitólio e oferece uma vista elevada sobre o Fórum.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Tabularium_January_2015-1.jpg" alt="Tabulário">
-    </div>
-
-    <h2>15. Arco de Septímio Severo</h2>
-    <div class="section">
-        <p class="description">
-            Este arco foi erguido em 203 d.C. para comemorar as vitórias militares do imperador Septímio Severo. Ele está ricamente decorado com relevos detalhados das campanhas militares.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Arco_di_Settimio_Severo.JPG" alt="Arco de Septímio Severo">
-    </div>
-
-    <h2>16. Cúria Júlia</h2>
-    <div class="section">
-        <p class="description">
-            A Cúria era o edifício onde o Senado Romano se reunia. A sua estrutura foi bem preservada ao longo dos séculos, sendo um dos monumentos mais bem conservados do Fórum Romano.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Curia_Julia_Facade.jpg" alt="Cúria Júlia">
-    </div>
-
-    <h2>17. Basílica Emília</h2>
-    <div class="section">
-        <p class="description">
-            Uma das mais antigas basílicas de Roma, usada para atividades comerciais e audiências judiciais. As ruínas ainda mostram parte da sua arquitetura impressionante.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Le_Basiliche%2C_Basilica_Aemilia_03.JPG" alt="Basílica Emília">
-    </div>
-
-    <h2>18. Via Sacra</h2>
-    <div class="section">
-        <p class="description">
-            A Via Sacra era a principal rua do Fórum Romano, por onde passavam as procissões triunfais. Ela liga o Monte Palatino ao Coliseu, passando pelo coração do Fórum.
-        </p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/RomaViaSacra02.jpg" alt="Via Sacra">
-    </div>
-
+        <section class="section">
+            <h2>Fórum Romano</h2>
+            <ol>
+                <li>
+                    <h3>Basílica Júlia</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Basilica_Julia_-_Roman_Forum.jpg" alt="Basílica Júlia">
+                    <p class="description">
+                        Localizada no Fórum Romano, esta era uma grande basílica onde se realizavam julgamentos e audiências públicas. As ruínas ainda impressionam pela dimensão.
+                    </p>
+                </li>
+                <li>
+                    <h3>Coluna de Focas</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Columna_de_Focas.jpg" alt="Coluna de Focas">
+                    <p class="description">
+                        A última adição ao Fórum Romano, esta coluna foi erguida em 608 d.C. em homenagem ao imperador bizantino Focas. Ela se destaca por sua solidão em meio às ruínas.
+                    </p>
+                </li>
+                <li>
+                    <h3>Templo de Saturno</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Tempio_di_Saturno.JPG" alt="Templo de Saturno">
+                    <p class="description">
+                        Um dos templos mais antigos de Roma, dedicado a Saturno, deus da agricultura. As colunas que permanecem de pé são um testemunho da sua grandiosidade.
+                    </p>
+                </li>
+                <li>
+                    <h3>Tabulário</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Tabularium_January_2015-1.jpg" alt="Tabulário">
+                    <p class="description">
+                        O Tabulário era o edifício onde os arquivos do Estado Romano eram guardados. Parte da estrutura está integrada ao Capitólio e oferece uma vista elevada sobre o Fórum.
+                    </p>
+                </li>
+                <li>
+                    <h3>Arco de Septímio Severo</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Arco_di_Settimio_Severo.JPG" alt="Arco de Septímio Severo">
+                    <p class="description">
+                        Este arco foi erguido em 203 d.C. para comemorar as vitórias militares do imperador Septímio Severo. Ele está ricamente decorado com relevos detalhados das campanhas militares.
+                    </p>
+                </li>
+                <li>
+                    <h3>Cúria Júlia</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Curia_Julia_Facade.jpg" alt="Cúria Júlia">
+                    <p class="description">
+                        A Cúria era o edifício onde o Senado Romano se reunia. A sua estrutura foi bem preservada ao longo dos séculos, sendo um dos monumentos mais bem conservados do Fórum Romano.
+                    </p>
+                </li>
+                <li>
+                    <h3>Basílica Emília</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Le_Basiliche%2C_Basilica_Aemilia_03.JPG" alt="Basílica Emília">
+                    <p class="description">
+                        Uma das mais antigas basílicas de Roma, usada para atividades comerciais e audiências judiciais. As ruínas ainda mostram parte da sua arquitetura impressionante.
+                    </p>
+                </li>
+                <li>
+                    <h3>Via Sacra</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/RomaViaSacra02.jpg" alt="Via Sacra">
+                    <p class="description">
+                        A Via Sacra era a principal rua do Fórum Romano, por onde passavam as procissões triunfais. Ela liga o Monte Palatino ao Coliseu, passando pelo coração do Fórum.
+                    </p>
+                </li>
+            </ol>
+        </section>
+    </section>
 </body>
 </html>
