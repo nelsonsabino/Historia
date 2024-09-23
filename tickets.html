@@ -1,78 +1,82 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Top 5 Comidas Imperdíveis em Roma</title>
+  <title>Bilhetes de Transportes Públicos em Roma</title>
   <meta charset="UTF-8">
   <style>
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      margin: 2rem; 
+      margin: 2rem;
+      text-align: center; /* Centralizar o conteúdo */
     }
 
-    h1, h2 {
+    h1, h2, h3 {
       color: #333;
     }
 
     h1 {
-      text-align: center;
       margin-bottom: 2rem;
     }
 
     h2 {
-      margin-top: 3rem; 
+      margin-top: 3rem;
     }
 
-    img {
-      width: 100%;
-      max-width: 600px;
-      height: auto;
-      display: block;
-      margin: 1rem auto;
-      border-radius: 8px; 
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .ticket {
+      border: 1px solid #ddd;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 200px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
     }
 
-    p {
-      margin-bottom: 1.5rem;
+    .highlight {
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <h1>Bilhetes de transportes publicos</h1>
+  <h1>Bilhetes de Transportes Públicos em Roma</h1>
 
-  <div>
-    <h2>5-BIT 100 minuti</h2>
-    <p>5 bilhetes com 100 minutos - 7,50€ </p>
-  </div>
+  <h2>Opções de Bilhetes:</h2>
+  <div class="container">
+    <div class="ticket">
+      <h3>5-BIT 100 minutos</h3>
+      <p>5 bilhetes com 100 minutos cada</p>
+      <p>Preço: <span class="highlight">7,50€</span></p>
+    </div>
 
-  <div>
-    <h2>3-BIT 100 minuti</h2>
-    <p>3 bilhetes com 100 minutos - 4,50€ </p>
-  </div>
-
-  <div>
-    <p>São necessárias 11 viagens. Para 4 pessoas será 44 viagens</p>
-  </div>
-<div>
-    <p>Para 11 viagens iremos comprar 1x 5-BIT + 2x 3-BIT (POR PESSOA)</p>
+    <div class="ticket">
+      <h3>3-BIT 100 minutos</h3>
+      <p>3 bilhetes com 100 minutos cada</p>
+      <p>Preço: <span class="highlight">4,50€</span></p>
+    </div>
   </div>
 
-  <div>
-    <p>Para 11 viagens custará 1x 7,50€ + 2x 4,50€ (POR PESSOA) = 16,50€</p>
-  </div>
+  <h2>Cálculo para 4 Pessoas (11 Viagens Cada):</h2>
 
-    <div>
-    <p>TOTAL para 4 pessoas será 66€</p>
-  </div>
+  <p>Total de viagens: 11 viagens/pessoa x 4 pessoas = <span class="highlight">44 viagens</span></p>
+  <p>Melhor opção: 1x 5-BIT + 2x 3-BIT (por pessoa)</p>
+  <p>Custo por pessoa: 7,50€ + (2 x 4,50€) = <span class="highlight">16,50€</span></p>
+  <p>Custo total (4 pessoas): 16,50€/pessoa x 4 pessoas = <span class="highlight">66€</span></p>
 
-    <div>
-    <p>Necessitamos de comprar: </p>
-      <p><li><b>4 bilhetes de 5-BIT (20 viagens)</b></li></p>
-      <p><li><b>8 bilhetes de 3-BIT (24 viagens)</b></li></p>
-  </div>
-  
+  <h2>Resumo da Compra:</h2>
+
+  <ul>
+    <li><span class="highlight">4 bilhetes de 5-BIT</span> (20 viagens)</li>
+    <li><span class="highlight">8 bilhetes de 3-BIT</span> (24 viagens)</li>
+  </ul>
+
 </body>
 </html>
