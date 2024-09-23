@@ -3,12 +3,13 @@
 <head>
   <title>Bilhetes de Transportes Públicos em Roma</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <style>
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
-      margin: 2rem;
-      text-align: center; /* Centralizar o conteúdo */
+      margin: 1rem; /* Margem menor para telemóveis */
+      text-align: center;
     }
 
     h1, h2, h3 {
@@ -16,32 +17,45 @@
     }
 
     h1 {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem; /* Espaçamento menor */
     }
 
     h2 {
-      margin-top: 3rem;
+      margin-top: 2rem;
     }
 
     .container {
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* Opções em coluna no mobile */
       align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem;
+      gap: 1rem;
     }
 
     .ticket {
       border: 1px solid #ddd;
-      padding: 2rem;
+      padding: 1.5rem;
       border-radius: 8px;
-      width: 200px;
+      width: 100%; /* Largura total no mobile */
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       text-align: left;
+      margin-bottom: 1rem; 
     }
 
     .highlight {
       font-weight: bold;
+    }
+
+    /* Media Query para ecrãs pequenos (telemóveis) */
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px; /* Reduzir tamanho da fonte */
+      }
+      h1 {
+        font-size: 1.8rem; 
+      }
+      h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
@@ -56,7 +70,6 @@
       <p>5 bilhetes com 100 minutos cada</p>
       <p>Preço: <span class="highlight">7,50€</span></p>
     </div>
-
     <div class="ticket">
       <h3>3-BIT 100 minutos</h3>
       <p>3 bilhetes com 100 minutos cada</p>
@@ -65,14 +78,12 @@
   </div>
 
   <h2>Cálculo para 4 Pessoas (11 Viagens Cada):</h2>
-
   <p>Total de viagens: 11 viagens/pessoa x 4 pessoas = <span class="highlight">44 viagens</span></p>
   <p>Melhor opção: 1x 5-BIT + 2x 3-BIT (por pessoa)</p>
   <p>Custo por pessoa: 7,50€ + (2 x 4,50€) = <span class="highlight">16,50€</span></p>
   <p>Custo total (4 pessoas): 16,50€/pessoa x 4 pessoas = <span class="highlight">66€</span></p>
 
   <h2>Resumo da Compra:</h2>
-
   <ul>
     <li><span class="highlight">4 bilhetes de 5-BIT</span> (20 viagens)</li>
     <li><span class="highlight">8 bilhetes de 3-BIT</span> (24 viagens)</li>
