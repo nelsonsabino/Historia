@@ -5,53 +5,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Visita a Roma</title> 
 <style>
-    /* ... (seus estilos CSS) ... */
-    .map-container {
-        margin-bottom: 20px; /* Espaçamento abaixo do mapa */
-        text-align: center; /* Centralizar o mapa */
-    }
+  /* Tipografia */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0; 
+    background-color: #f4f4f4; 
+    color: #333; 
+  }
 
-    .links-container {
-        text-align: center; /* Centralizar os links */
-        margin-bottom: 30px;  /* Espaçamento abaixo dos links */
-    }
+  /* Estilos gerais */
+  h1, h2 {
+    color: #333; 
+  }
 
-    .links-container h2 {
-        margin-bottom: 10px;
-    }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 1rem 0; 
+    background-color: #e9e9e9;
+  }
 
-    .links-container ul {
-        list-style: none;
-        padding: 0;
-    }
+  a {
+    color: #007bff; /* Cor azul para links */
+    text-decoration: none;
+  }
 
-    .links-container li {
-        margin-bottom: 5px;
-    }
+  a:hover {
+    text-decoration: underline; 
+  }
+
+  /* Container do mapa e links */
+  .content-wrapper {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+  }
+
+  /* Mapa */
+  .map-container {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Links úteis */
+  .links-container h2 {
+    margin-bottom: 15px;
+  }
+
+  .links-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .links-container li {
+    margin-bottom: 10px;
+  }
 </style>
 </head>
 <body>
 
+  <h1>Visita a Roma</h1>
+
+  <div class="content-wrapper"> 
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=159y6O26Uxul_fugJ_fueVRC01jQlg7Y&ehbc=2E312F" width="420" height="440"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=159y6O26Uxul_fugJ_fueVRC01jQlg7Y&ehbc=2E312F" width="100%" height="440"></iframe>
     </div>
 
-    <div class="links-container">
-       
-        <h2><a href="roteiro.html">Aceder ao Roteiro Detalhado</a></h2>
-        
-         <h2>Ligações úteis</h2>    
+    <div class="links-container">       
+        <h2><a href="roteiro.html">Aceder ao Roteiro Detalhado</a></h2>       
+        <h2>Ligações úteis</h2>    
         <ul>
             <li><a href="comida_romana.html" target="_blank">A melhor comida romana</a></li>
             <li><a href="https://docs.google.com/spreadsheets/d/16MFACJIV9lrW6NNF_6eWDTf9xB8ymMqiICG5PG70cNY/edit?usp=sharing" target="_blank">Check-list</a></li>
             <li><a href="https://drive.google.com/drive/folders/1FVdIKVipH3S8HO1lTMcSVIUZLGbnNrPS?usp=sharing" target="_blank">Bilhetes Eletrónicos</a></li>
             <li><a href="https://www.accuweather.com/en/it/rome/213490/september-weather/213490" target="_blank">Previsão do tempo</a></li>
-            <li><a href="https://www.youtube.com/watch?v=RDqrx6S2z20&list=PLMk7Pq6JpnJJLq1IbiSZQB4kwlAI79xdJ&index=11" target="_blank">Webcam cupula S.Pedro</a></li>
-                   </ul>
-        
+            <li><a href="https://www.youtube.com/watch?v=RDqrx6S2z20&list=PLMk7Pq6JpnJJLq1IbiSZQB4kwlAI79xdJ&index=11" target="_blank">Webcam cúpula S.Pedro</a></li>
+        </ul>        
     </div>
-
-    <!-- ... (código do roteiro em abas - opcional) ... -->
+  </div>
 
 </body>
 </html>
