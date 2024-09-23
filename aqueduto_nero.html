@@ -15,11 +15,17 @@
             color: #333;
         }
         
-        img {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+img {
+  width: 100%; /* Largura padrão: 100% */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+@media (min-width: 768px) { /* Ajuste o valor para a largura desejada */
+  img {
+    max-width: 400px; /* Largura máxima em telas maiores */
+  }
 }
         .content {
             margin: 20px;
